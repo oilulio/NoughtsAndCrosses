@@ -1,0 +1,98 @@
+<html lang="en-GB">
+<head>
+<script src="OandX.js"></script>
+<link rel="stylesheet" type="text/css" href="OandX.css">
+</head>
+
+<body onload="start()">
+
+<h1>Noughts and Crosses against a Javascript opponent</h1>
+
+<p>You are playing Noughts and Crosses (Tic-Tac-Toe) against a javascript
+opponent.</p>
+
+<table>
+<tr  VALIGN="CENTER" HALIGH="CENTER">
+<td>
+<img onMouseover="overMe(0)" onMouseout="outMe(0)" onClick="clickMe(0)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(1)" onMouseout="outMe(1)" onClick="clickMe(1)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(2)" onMouseout="outMe(2)" onClick="clickMe(2)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td  class="padded">
+  <h2>Skill Level</h2>
+<input type="radio" id="poor" name="skill" value="POOR">
+<label for="poor">Poor</label><br>
+
+<input type="radio" id="medium" name="skill" value="MED">
+<label for="medium">Medium</label><br>
+
+<input type="radio" id="cands" name="skill" value="cands">
+<label for="medium">Crowley and Siegler</label><br>
+
+<input type="radio" id="expert" name="skill" value="EXPERT">
+<label for="expert">Expert</label><br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<img onMouseover="overMe(3)" onMouseout="outMe(3)" onClick="clickMe(3)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(4)" onMouseout="outMe(4)" onClick="clickMe(4)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(5)" onMouseout="outMe(5)" onClick="clickMe(5)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+
+<td class="padded">
+<h2>Successes</h2>
+<p id="score"></p> 
+<button type="button" onclick="resetScores()">Reset scores</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<img onMouseover="overMe(6)" onMouseout="outMe(6)" onClick="clickMe(6)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(7)" onMouseout="outMe(7)" onClick="clickMe(7)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td>
+<img onMouseover="overMe(8)" onMouseout="outMe(8)" onClick="clickMe(8)"
+     SRC="images/blank.jpg" alt="" WIDTH="150" HEIGHT="150"> 
+</td>
+
+<td class="padded"><h2>Autoplay (WOPR mode)</h2><input type="checkbox" id="auto" name="auto" onClick="autoCheckbox()">
+<label for="auto">Computer plays itself (X is Poor, playing selected skill as O)</label>
+
+<h2>Tutoring</h2><input type="checkbox" id="explain" name="explain" >
+<label for="explain">Give explanations of computer moves</label><br></td>
+
+</tr>
+</table>
+
+</body>
+</html>
