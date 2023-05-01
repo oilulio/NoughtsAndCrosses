@@ -1,0 +1,20 @@
+body {
+  background-color: #D8B882;
+  font-family: Arial;
+  font-size: 16px;
+  min-width:1200px;
+}
+table {
+  background-color: #888888;
+  border-spacing: 4px;
+  border-collapse: collapse;
+}
+.padded { 
+  padding:20px; 
+  background-color: #D0D0D0;
+}
+
+h1 { font-size: 24px; color: blue; }
+h2 { font-size: 16px; color: black; }
+p { font-size: 14px; color: black; }
+td { font-size: 14px; color: black; }
