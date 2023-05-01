@@ -3,7 +3,7 @@ Teaching and testing noughts and crosses game (Tic-tac-toe)
 
 User can play against the computer at four levels of computer skill; if requested, computer will explain its moves.
 
-Computer will also play agianst itself (WOPR mode).  In that case, X is the specified skill level and O is always Poor (random play).
+Computer will also play against itself (WOPR mode).  In that case, X is the specified skill level and O is always Poor (random play).
 
 Results from random testing of at least 28,000 games, with X always Poor and O as selected, are:
 
